@@ -99,3 +99,15 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 30px;
     font-size: 18px;
 }
+
+.list-item__image_lamp {
+    margin: 5px;
+}
+
+.list-item__image_keyboard {
+    margin: 21px 5px;
+}
+
+.list-item__image_lightning {
+    margin: 12px;
+}
