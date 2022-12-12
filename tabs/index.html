@@ -8,33 +8,42 @@
     <title>AXIT</title>
 </head>
 <body>
+    <section class="banner">
+        <div class="container">
+            
+        </div>
+    </section>
     <section class="tabs">
         <div class="container">
-            <section class="menu">
-                <a href="#tab01" class="menu_item">TAB 1</a>
-                <a href="#tab02" class="menu_item">TAB 2</a>
-                <a href="#tab03" class="menu_item">TAB 3</a>
-            </section>
+            <ul class="menu">
+                <li class="menu__item active">TAB 1</li>
+                <li class="menu__item">TAB 2</li>
+                <li class="menu__item">TAB 3</li>
+            </ul>
             <section class="content">
-                <img class="content_img" src="./img/picture_tabs.svg" alt="Statue of Liberty">
-                <div class="content_title">Tabs with soft transitioning effect</div>
-                <div class="content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                <div class="content__descr">
+                    <div class="descr__title">Tabs with soft transitioning effect</div>
+                    <div class="descr__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
                 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
                 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
                 penatibus et magnis dis parturient montes.
-                    <br>
-                    <br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                bibendum laoreet.</div>
-                <a href="#" class="content_button">Download</a>
+                bibendum laoreet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                justo commodo. Proin sodales pulvinar tempor.
+                </div>
+                    <a href="#" class="descr__button">Download</a>
+                </div>
+                <img class="content__img" src="./img/picture_tabs.svg" alt="Statue of Liberty">
             </section>
         </div>
     </section>
     <section class="about">
         <div class="container">
-        <h2 class="about__title">WHY THIS IS AWESOME</h2>
+        <h2 class="main__title">WHY THIS IS AWESOME</h2>
         <div class="separator separator--red-color"></div>
-        <p class="about__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="main__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <ul class="about__list">
             <li class="list__list-item">
                 <div class="list-item__image--wrapper">
@@ -65,11 +74,11 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
     </section>
     <section class="pricing">
         <div class="container">
-            <h2 class="pricing__title">PRICING OPTIONS</h2>
+            <h2 class="main__title">PRICING OPTIONS</h2>
             <div class="separator separator--red-color"></div>
-            <p class="pricing__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="main__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <section class="pricing__options">
-                <div class="options__option-basic">
+                <div class="options__option basic">
                     <div class="options__title">
                         <p class="title__main">Basic</p>
                     </div>
@@ -102,7 +111,7 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
                         </ul>
                     </div>
                 </div>
-                <div class="options__option-optima">
+                <div class="options__option optima">
                     <div class="options__title">
                         <p class="title__main">Optima</p>
                     </div>
@@ -135,7 +144,7 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
                         </ul>
                     </div>
                 </div>
-                <div class="options__option-pro">
+                <div class="options__option pro">
                     <div class="options__title">
                         <p class="title__main">Pro</p>
                     </div>
@@ -169,6 +178,60 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
                     </div>
                 </div>
             </section>
+        </div>
+    </section>
+    <section class="customers">
+        <div class="container">
+            <h2 class="main__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+            <div class="separator separator--red-color"></div> 
+            <p class="main__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="reviews">
+                <div class="reviews__block">
+                    <div class="block__content">
+                        <div class="content__text">
+                        <p class="text__review">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. Doloribus 
+                            accusamus expedita repellat similique 
+                            odio aspernatur ex, architecto eaque 
+                            quo suscipit.</p>
+                        </div>
+                        <h3 class="descr__name">Davis Rhiel Madsen</h3>
+                        <p class="descr__position">Manager</p>
+                    </div>
+                    <div class="block__content">
+                    <div class="content__text">
+                    <p class="text__review">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</p>
+                    </div>
+                        <h3 class="descr__name">Jaydon Rosser</h3>
+                    <p class="descr__position">Manager</p>
+                    </div>
+                    <div class="block__content">
+                    <div class="content__text">
+                    <p class="text__review">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</p>
+                    </div>
+                    <h3 class="descr__name">Cooper Dorwart</h3>
+                    <p class="descr__position">Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="design">
+        <div class="container">
+            <div class="design__content">
+                <h2 class="main__title--white-color">STYLISH AXURE DESIGN</h2>
+                <div class="separator separator--white-color"></div> 
+                <p class="main__secondary-title--white-color">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                <a href="#" class="design__button">Download</a>
+            </div>
         </div>
     </section>
 </body>
