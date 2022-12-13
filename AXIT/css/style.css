@@ -38,6 +38,7 @@ a {
     font-family: "Open Sans", sans-serif;
     position: sticky;
     top: 0;
+    z-index: 4;
 }
 
 .header__section {
