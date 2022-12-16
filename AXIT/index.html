@@ -33,9 +33,24 @@
                     <p class="banner__secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <a href="#" class="banner__button">Download</a>
                 </div>
-                <div class="banner__form">
-                    <h2 class="form__title">Try Your FREE Trial Today</h2>
-                </div>
+                <form class="banner__form" action="#" method="post" name="registration" id="registration" class="banner__form">
+                    <h2 class="form__title">Try Your <p class="title__highlight"> FREE </p> Trial Today</h2>
+                    <div class="type__section">
+                        <div class="form__info">
+                            <input class="info__type" type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="form__separator"></div>
+                        <div class="form__info">
+                            <input class="info__type" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form__separator"></div>
+                        <div class="form__info">
+                            <input class="info__type" type="password" name="password" placeholder="Password">
+                        </div>
+                        <div class="form__separator"></div>
+                        <button class="form__button" type="submit">Get Started</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
