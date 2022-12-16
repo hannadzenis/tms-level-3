@@ -76,7 +76,6 @@ a {
 
 .container__banner {
     display: flex;
-    gap: 70px;
 }
 
 .banner__title {
@@ -331,6 +330,7 @@ a {
 .main__secondary-title {
     font-family: "Raleway";
     font-size: 18px;
+    font-weight: 400;
     text-align: center;
     color: #868788;
 }
@@ -375,6 +375,9 @@ a {
 }
 
 .list-item__text {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 18px;
     margin: 30px;
     font-size: 18px;
 }
@@ -612,6 +615,38 @@ a {
     align-items: center;
     padding: 15px;
     margin: 73px 385px;
+}
+
+
+
+
+
+.forms {
+    display: flex;
+    gap: 30px;
+    padding: 89px 0;
+}
+
+.textaree__message {
+    resize: none;
+    width: 569px;
+    height: 217px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.form__separator--long {
+    width: 570px;
+}
+
+.form__button--small {
+    height: 58px;
+    width: 370px;
+    border-radius: 0px;
+    margin: 50px 411px;
 }
 
 
