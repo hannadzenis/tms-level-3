@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     padding: 50px 15px;
     margin: 0px auto;
     position: relative;
@@ -57,7 +57,7 @@ a {
 
 
 .banner {
-    background: url("../img/banner.svg") no-repeat center/100%;
+    background: url("../img/banner.svg") no-repeat center/cover;
     position: relative;
     padding: 170px;
 }
@@ -229,9 +229,14 @@ a {
 
 
 
-.menu__item {
-    width: 203px;
-    display: inline-block;
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu__item a{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -243,13 +248,13 @@ a {
     border-radius: 5px 5px 0 0;
     margin-bottom: -1px;
     list-style: none;
+    padding: 0px 73px;
 }
 
-.menu__item:focus, .menu__item:hover, .menu__item:active {
+.menu__item a:focus, .menu__item a:hover, .menu__item a:active {
     border: 1px solid #C6CBCD;
     z-index: 2;
-    border-bottom-width: 0;
-    background-color: #FFFFFF;
+    border-bottom: 1px solid white;
 }
 
 .content {
@@ -531,7 +536,7 @@ a {
 .text__review::before {
     content: url("../img/Polygon.svg");
     position: absolute;
-    widht: 30px;
+    width: 30px;
     height: 20px;
     top: 143px;
     left: 30px;
@@ -567,7 +572,7 @@ a {
 
 
 .design {
-    background: url(../img/design_city.svg) no-repeat center/100%;
+    background: url(../img/design_city.svg) no-repeat center/cover;
     position: relative;
 }
 
