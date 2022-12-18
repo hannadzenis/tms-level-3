@@ -221,6 +221,7 @@ a {
     padding: 5px;
     display: flex;
     max-width: 50%;
+    align-items: center;
 }
 
 .icons__media:not(:last-child) {
@@ -681,6 +682,7 @@ a {
 .footer__media {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footer__signature {
@@ -852,4 +854,4 @@ a {
 
     @media(max-width:320px) {
 
-    }
+}
