@@ -421,7 +421,6 @@ a {
 
 .pricing__options {
     display: flex;
-    justify-content: space-between;
     margin: 79px 0 0 0;
     gap: 15px;
 }
@@ -525,6 +524,10 @@ a {
     justify-content: space-between;
 }
 
+.block__content {
+    width: 100%;
+}
+
 .content__text {
     background: #E2E2E2;
     max-width: 370px;
@@ -548,8 +551,6 @@ a {
 .text__review::before {
     content: url("../img/Polygon.svg");
     position: absolute;
-    width: 30px;
-    height: 20px;
     top: 143px;
     left: 30px;
 }
@@ -558,9 +559,9 @@ a {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    width: 269px;
+    max-width: 269px;
     position: relative;
-    margin: 0 79px;
+    margin: 0 73px;
 }
 
 .descr__name--first::before {
@@ -569,8 +570,6 @@ a {
     top: 0;
     left: 0;
     margin-left: -84px;
-    width: 50px;
-    height: 50px;
 }
 
 .descr__name--second::before {
@@ -579,8 +578,6 @@ a {
     top: 0;
     left: 0;
     margin-left: -84px;
-    width: 50px;
-    height: 50px;
 }
 
 .descr__name--third::before {
@@ -589,8 +586,6 @@ a {
     top: 0;
     left: 0;
     margin-left: -84px;
-    width: 50px;
-    height: 50px;
 }
 
 .descr__position {
@@ -660,14 +655,12 @@ a {
 
 .forms {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     padding: 89px 0;
 }
 
 .textaree__message {
     resize: none;
-    width: 569px;
-    height: 217px;
     border: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -677,7 +670,8 @@ a {
 }
 
 .form__separator--long {
-    width: 570px;
+    width: 554px;
+    margin-bottom: 29px;
 }
 
 .form__button--small {
@@ -744,6 +738,19 @@ a {
 
     .block__content {
         margin-right: -3.4rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    .form__button--small {
+        margin: 50px 401px;
+    }
+    .form__separator--long { 
+        width: 554px;
+    }
+
+    .container__content_menu {
+        margin: -12px;
     }
 }
 
@@ -817,11 +824,15 @@ a {
     }
 
     .form__button--small {
-        margin: 50px 343px;
+        margin: 50px 327px;
     }
 
     .form__separator {
         max-width: 487px;
+    }
+
+    .textaree__message {
+        padding: 9px;
     }
 }
 
@@ -832,7 +843,6 @@ a {
         position: fixed;
         width: 30px;
         text-align: center;
-        left: 30px;
         top: 0px;
         color: #fff;
     }
@@ -871,5 +881,243 @@ a {
     }
 
     @media(max-width:320px) {
+        .header {
+            padding: 10px 26px 10px 23px;
+        }
 
+        .header__lo {
+            max-width: 38px;
+        }
+
+        .header__go {
+            max-width: 24px;
+        }
+
+        .header__burger {
+            top: 12px;
+            right: 15px;
+        }
+
+        .banner {
+            padding: 84px 160px;
+        }
+
+        .banner__content {
+            display: inline-block;
+            text-align: center;
+            margin-left: -9.5rem;
+        }
+
+        .container__banner {
+            display: block;
+        }
+
+        .banner__logo {
+            display: none;
+        }
+
+        .banner__title {
+            font-size: 36px;
+            line-height: 42.26px;
+            margin: -8px;
+        }
+
+        .banner__separator {
+            margin: 43px;
+        }
+
+        .banner__secondary-title {
+            display: inline-block;
+        }
+
+        .banner__form {
+            padding: 144px;
+            max-height: 381px;
+            top: 56px;
+            right: 158px;
+        }
+
+        .form__title {
+            font-size: 14px;
+            left: 43px;
+        }
+
+        .form__separator {
+            width: 258px;
+        }
+
+        .type__section {
+            margin: -89px -129px;
+        }
+
+        .form__button {
+            max-height: 60px;
+        }
+
+        .social-media__content {
+            display: block;
+        }
+
+        .social-media__icons {
+            margin: 34px 0 -33px;
+        }
+
+        .icons__media img{
+            max-height: 20px;
+        }
+
+        .social-media__description {
+            width: 100%;
+            text-align: center;
+        }
+
+        .social-media__title {
+            font-size: 18px;
+        }
+
+        .social-media__secondary-title {
+            font-size: 14px;
+            margin-top: 13px;
+        }
+
+        .menu__item a {
+            padding: 0px 28px;
+        }
+
+        .content__descr {
+            padding: 30px 24px;
+        }
+
+        .descr__title {
+            font-size: 18px;
+            max-width: 240px;
+            text-align: center;
+            line-height: 24.51px;
+        }
+
+        .descr__text {
+            font-size: 13px;
+            max-width: 240px;
+            max-height: 180px;
+            overflow: scroll;
+            text-align: center;
+            margin: 15px 0;
+            padding-right: 0;
+        }
+
+        .descr__button {
+            margin-top: 31px;
+        }
+
+        .list__list-item {
+            max-width: 288px;
+            display: block;
+            width: 100%;
+            margin-bottom: 43px;
+        }
+
+        .list-item__image--wrapper {
+            margin-left: 100px;
+            margin-bottom: 50px;
+        }
+
+        .pricing__options {
+            display: block;
+        }
+
+        .options__option {
+            margin-bottom: 27px;
+        }
+
+        .option__title {
+            font-size: 18px;
+        }
+
+        .option__price {
+            font-size: 24px;
+        }
+        
+        .option__secondary-title {
+            font-size: 14px;
+        }
+
+        .title__main {
+            font-size: 18px;
+            margin: 8px auto;
+        }
+
+        .list-item__space {
+            padding: 7px;
+        }
+
+        .space__text {
+            font-size: 14px;
+        }
+
+        .reviews__block {
+            margin-top: 24px;
+        }
+
+        .content__text {
+            max-width: 288px;
+        }
+
+        .text__review {
+            font-size: 14px;
+        }
+
+        .descr__name {
+            font-size: 14px;
+        }
+
+        .descr__position {
+            font-size: 13px;
+        }
+
+        .text__review::before {
+            top: 135px;
+        }
+
+        .main__title {
+            font-size: 24px;
+        }
+
+        .main__secondary-title {
+            font-size: 14px;
+        }
+
+        .separator--red-color {
+            max-width: 134px;
+        }
+
+        .main__title--white-color {
+            font-size: 24px;
+        }
+
+        .separator--white-color {
+            max-width: 134px;
+        }
+
+        .main__secondary-title--white-color {
+            font-size: 14px;
+        }
+
+        .design__button {
+            font-size: 18px;
+            margin: 9px 0;
+            width: 100%;
+        }
+
+        .forms {
+            padding: 64px 0;
+        }
+
+        .textaree__message {
+            padding: 0;
+        }
+
+        .form__button--small {
+            margin: 50px 16px;
+            max-width: 288px;
+        }
 }
