@@ -423,6 +423,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 79px 0 0 0;
+    gap: 15px;
 }
 
 .options__option {
@@ -437,7 +438,6 @@ a {
 }
 
 .options__title {
-    max-width: 370px;
     border: 2px solid #F5F5F5;
     background-color:#333333;
     color: #F5F5F5;
@@ -458,7 +458,6 @@ a {
 }
 
 .options__price {
-    max-width: 370px;
     border: 2px solid #F5F5F5;
     background-color:#333333;
     color: #F5F5F5;
@@ -479,7 +478,6 @@ a {
 }
 
 .options__secondary-title {
-    max-width: 370px;
     border: 2px solid #F5F5F5;
     background-color:#333333;
     color: #F5F5F5;
@@ -500,7 +498,6 @@ a {
 }
 
 .list-item__space {
-    max-width: 370px;
     background: #FFFFFF;
     border: 2px solid #F5F5F5;
     padding: 14px;
@@ -566,8 +563,28 @@ a {
     margin: 0 79px;
 }
 
-.descr__name::before {
+.descr__name--first::before {
     content: url("../img/Manager1.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -84px;
+    width: 50px;
+    height: 50px;
+}
+
+.descr__name--second::before {
+    content: url("../img/Manager2.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -84px;
+    width: 50px;
+    height: 50px;
+}
+
+.descr__name--third::before {
+    content: url("../img/Manager3.svg");
     position: absolute;
     top: 0;
     left: 0;
@@ -656,6 +673,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     color: #BDBDBD;
+    padding: 13px
 }
 
 .form__separator--long {
